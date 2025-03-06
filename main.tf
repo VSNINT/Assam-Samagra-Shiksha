@@ -84,11 +84,13 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
 resource "azurerm_managed_disk" "data_disk" {
   name                 = "${var.vm_name}-datadisk"
-  location             = var.location
-  resource_group_name  = var.resource_group_name
+  location             = azurerm_resource_group.rg.location
+  resource_group_name  = azurerm_resource_group.rg.name
   storage_account_type = var.data_disk_type
   create_option        = "Empty"
   disk_size_gb         = var.data_disk_size
+
+  depends_on = [azurerm_resource_group.rg]  # Ensures RG exists before disk creation
 }
 
 resource "azurerm_virtual_machine_data_disk_attachment" "data_disk_attachment" {
