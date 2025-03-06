@@ -1,19 +1,23 @@
 ### `variables.tf`
 
-variable "subscription_id" {
-  default = "45d34f6c-1b53-4dbe-9035-4b2e38769161"
-}
-
-variable "tenant_id" {
-  default = "d421cc8e-c9ec-4917-a7dd-bf2e6e77bb6b"
-}
-
 variable "client_id" {
-  default = "38c80693-eb61-47c2-998b-bb830f8b6223"
+  description = "The client ID of the Azure service principal"
+  type        = string
 }
 
 variable "client_secret" {
-  default = "gDX8Q~KckUzVOJmUpercSnLXclxqB9g3CItZGbMM"
+  description = "The client secret of the Azure service principal"
+  type        = string
+}
+
+variable "tenant_id" {
+  description = "The tenant ID of the Azure subscription"
+  type        = string
+}
+
+variable "subscription_id" {
+  description = "The subscription ID of the Azure subscription"
+  type        = string
 }
 
 variable "location" {
