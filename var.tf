@@ -1,19 +1,19 @@
 ### `variables.tf`
 
 variable "subscription_id" {
-  default = "45d34f6c-1b53-4dbe-9035-4b2e38769161"
+  default = "080b80fa-e4db-4609-a345-ce388ca3c1f6"
 }
 
 variable "tenant_id" {
-  default = "d421cc8e-c9ec-4917-a7dd-bf2e6e77bb6b"
+  default = "81eeed5d-922e-4e8d-9772-fe1ce29edb21"
 }
 
 variable "client_id" {
-  default = "38c80693-eb61-47c2-998b-bb830f8b6223"
+  default = "094969a0-b3a9-4793-818b-01e6fae4b74d"
 }
 
 variable "client_secret" {
-  default = "gDX8Q~KckUzVOJmUpercSnLXclxqB9g3CItZGbMM"
+  default = "U-28Q~mwjZQ_-GNAw2hR_DODM5ICVpdIekyssaLj"
 }
 
 variable "location" {
