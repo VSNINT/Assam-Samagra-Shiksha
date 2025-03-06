@@ -33,11 +33,11 @@ variable "subnet_name" {
 }
 
 variable "vm_name" {
-  default = "app-vm"
+  default = "test-vm"
 }
 
 variable "vm_size" {
-  default = "Standard_D16as_v5"
+  default = "Standard_B4ms_v5"
 }
 
 variable "admin_username" {
@@ -45,7 +45,7 @@ variable "admin_username" {
 }
 
 variable "admin_password" {
-  default = "@z.jT4rae7M2"
+  default = "a!s:(~*=U42{$)YN[vgrp9"
 }
 
 variable "os_disk_size" {
@@ -57,7 +57,7 @@ variable "os_disk_type" {
 }
 
 variable "data_disk_size" {
-  default = 2000
+  default = 100
 }
 
 variable "data_disk_type" {
