@@ -107,7 +107,7 @@ vm_configs = [
     os_disk_size         = 128
     create_data_disk     = true
     data_disk_type       = "StandardSSD_LRS"
-    data_disk_size       = 4096
+    data_disk_size       = 2048
     create_public_ip     = false
 
     security_rules = [
@@ -151,7 +151,7 @@ vm_configs = [
     os_disk_size         = 128
     create_data_disk     = true
     data_disk_type       = "StandardSSD_LRS"
-    data_disk_size       = 4096		
+    data_disk_size       = 2048
     create_public_ip     = false
 
     security_rules = [
