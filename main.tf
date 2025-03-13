@@ -34,7 +34,7 @@ resource_group_name = each.value[0].resource_group_name
 
 # Subnet Creation
 resource "azurerm_subnet" "new_subnet" {
-  for_each = { for vm in var.vm_configs : vm.subnet_name => vm if vm.create_subnet }
+ for_each = { for vm in var.vm_configs : vm.subnet_name => vm if vm.create_subnet }
 
   name                 = each.value.subnet_name
   resource_group_name  = each.value.resource_group_name
