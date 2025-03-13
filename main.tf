@@ -32,18 +32,16 @@ resource_group_name = each.value[0].resource_group_name
   depends_on = [azurerm_virtual_network.new_vnet]
 }
 
-# Subnet Creation
 resource "azurerm_subnet" "new_subnet" {
- for_each = { for vm in var.vm_configs : vm.subnet_name => vm if vm.create_subnet }
+  for_each = { for subnet_name, vms in { for vm in var.vm_configs : vm.subnet_name => vm... if vm.create_subnet } : subnet_name => vms[0] }
 
   name                 = each.value.subnet_name
   resource_group_name  = each.value.resource_group_name
-  virtual_network_name = azurerm_virtual_network.new_vnet[each.value.vnet_name].name
+  virtual_network_name = each.value.vnet_name
   address_prefixes     = [each.value.subnet_address_prefix]
 
   depends_on = [azurerm_virtual_network.new_vnet]
 }
-
 # Fetch existing Subnet
 data "azurerm_subnet" "existing_subnet" {
   for_each = {
