@@ -42,12 +42,6 @@ vm_configs = [
       sku       = "22_04-lts-gen2"
       version   = "latest"
     }
-
-    # Optional Tags
-    tags = {
-      App-Team = "rnitss"
-      Created On       = "13-03-2025"
-    }
   },
    {
     vm_name              = "app-server-2"
@@ -91,12 +85,6 @@ vm_configs = [
       offer     = "0001-com-ubuntu-server-jammy"
       sku       = "22_04-lts-gen2"
       version   = "latest"
-    }
-
-    # Optional Tags
-    tags = {
-      App-Team = "rnitss"
-      Created On   = "13-03-2025"
     }
   },
 {
@@ -142,12 +130,6 @@ vm_configs = [
       sku       = "22_04-lts-gen2"
       version   = "latest"
     }
-
-    # Optional Tags
-    tags = {
-      App-Team = "rnitss"
-      Created On   = "13-03-2025"
-    }
   },
 {
     vm_name              = "db-server-2"
@@ -192,12 +174,6 @@ vm_configs = [
       sku       = "22_04-lts-gen2"
       version   = "latest"
     }
-
-    # Optional Tags
-    tags = {
-      App-Team = "rnitss"
-      Created On   = "13-03-2025"
-    }
   },
 {
     vm_name              = "MQ-Server"
@@ -241,12 +217,6 @@ vm_configs = [
       offer     = "0001-com-ubuntu-server-jammy"
       sku       = "22_04-lts-gen2"
       version   = "latest"
-    }
-
-    # Optional Tags
-    tags = {
-      App-Team = "rnitss"
-      Created On   = "13-03-2025"
     }
   }
 ]
